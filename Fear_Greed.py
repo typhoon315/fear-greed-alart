@@ -9,7 +9,7 @@ url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
 try:
     data = requests.get(url, timeout=20).json()
 
-    score = int(data["fear_and_greed"]["score"])
+    score = int(data["Fear_and_Greed"]["score"])
 
     if score <= 100:
         message = (
