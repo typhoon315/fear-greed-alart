@@ -18,7 +18,9 @@ jobs:
 
       - run: pip install requests
 
-      - run: python fear_greed.py
+      - run: |
+    ls -al
+    python fear_greed.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
