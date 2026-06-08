@@ -11,7 +11,7 @@ try:
 
     score = int(data["fear_and_greed"]["score"])
 
-    if score <= 25:
+    if score <= 100:
         message = (
             f"🚨 Fear & Greed Alert\n\n"
             f"현재 지수: {score}\n"
